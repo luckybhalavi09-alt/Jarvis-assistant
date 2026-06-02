@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎤 Jarvis - Hindi Voice Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎤 Jarvis</h1>
+            <p>Hindi Voice Assistant</p>
+        </div>
+
+        <div class="display-box">
+            <p id="listening-status">Click button ko press kren aur Hindi mein bolein...</p>
+        </div>
+
+        <div class="button-container">
+            <button class="mic-button" onclick="startListening()" id="mic-btn">
+                🎤 Listen
+            </button>
+            <button class="stop-button" onclick="stopListening()" id="stop-btn">
+                ⏹ Stop
+            </button>
+        </div>
+
+        <div class="output-box">
+            <h3>Aapne Kaha:</h3>
+            <p id="user-input">Waiting for voice input...</p>
+            
+            <h3>Jarvis Ka Jawab:</h3>
+            <p id="jarvis-response">...</p>
+        </div>
+
+        <div class="commands-box">
+            <h3>📋 Available Commands (Hindi mein bolein):</h3>
+            <ul>
+                <li>🕐 "Samay batao" - Current time</li>
+                <li>📅 "Aaj ki tarikh" - Today's date</li>
+                <li>🔢 "Mera naam" - Your name</li>
+                <li>🎯 "Namaste" - Greeting</li>
+                <li>💬 "Hello" - Simple greeting</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
